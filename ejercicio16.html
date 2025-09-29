@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    /* Crear un programa que pida al usuario la distancia
+      de su recorrido y mostrar en un mensaje cuánto tiempo
+      tardaría en completar el recorrido en distintos medios 
+      de transporte, definiendo de antemano distintas velocidades
+      para distintos medios de transporte (p. ej.: a pie: 5 km/hora
+      , bici 10km/hora, etc.). */
+    <script>
+      let distancia = prompt("Introduce la cantidad recorrida en kilometros:")
+
+      let velocidadBiciporHora = 10
+      let velocidadCocheporHora = 50
+      let velocidadAPieporHora = 5
+
+      let tiempoEnBiciEnHoras = distancia / velocidadBiciporHora;
+      let tiempoEnCocheEnHoras = distancia / velocidadCocheporHora;
+      let tiempoAPieEnHoras = distancia / velocidadAPieporHora; 
+
+      alert(`La distancia de ${distancia} kilometros, tardarias ${tiempoEnBiciEnHoras} horas en Bici, tardarias ${tiempoEnCocheEnHoras} horas en coche y tardarias ${tiempoAPieEnHoras} horas a pie.`);
+    </script>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 16</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>
