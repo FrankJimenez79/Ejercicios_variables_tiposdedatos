@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script>
+      /* Crear un programa que pida ingresar una número de partida
+       y una cantidad a ir incrementando y mostrar cinco mensajes seguidos 
+       que muestren el número del mensaje y el total incrementado hasta el momento
+        (p. ej.: empezando con 5 e incrementando 5, "Incremento 1) Total: 10", "Incremento 2) 
+        Total: 15", "Incremento 3) Total: 20", etc.).*/ let numeroPartida =
+        Number(prompt("Introduce un numero de partida:"));
+      let cantidadIncremento = Number(
+        prompt("Introduce la cantidad a incrementar:")
+      );
+
+      let incremento1 = numeroPartida + cantidadIncremento;
+      let incremento2 = incremento1 + cantidadIncremento;
+      let incremento3 = incremento2 + cantidadIncremento;
+      let incremento4 = incremento3 + cantidadIncremento;
+      let incremento5 = incremento4 + cantidadIncremento;
+
+      alert(`Incremento 1: Total ${incremento1}`);
+      alert(`Incremento 2: Total ${incremento2}`);
+      alert(`Incremento 3: Total ${incremento3}`);
+      alert(`Incremento 4: Total ${incremento4}`);
+      alert(`Incremento 5: Total ${incremento5}`);
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 18</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

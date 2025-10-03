@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script>
+      /* Crear un programa que pida al usuario ingresar, por separado,
+     3 destinos de las escalas de un vuelo, y la duración de cada uno de ellos.
+      Al final debe mostrar un mensaje que liste todas las escalas con su duración y 
+      la duración total del vuelo. */
+      let escalaVuelo1 = prompt("Introduce la primera escala del vuelo:");
+      let duracionEscalaVuelo1 = Number(
+        prompt("Introduce la duracion de la primera escala en minutos:")
+      );
+      let escalaVuelo2 = prompt("Introduce la segunda escala del vuelo:");
+      let duracionEscalaVuelo2 = Number(
+        prompt("Introduce la duracion de la segunda escala en minutos:")
+      );
+      let escalaVuelo3 = prompt("Introduce la tercera escala del vuelo:");
+      let duracionEscalaVuelo3 = Number(
+        prompt("Introduce la duracion de la tercera escala en minutos:")
+      );
+
+      let duracionTotalEscalas =
+        duracionEscalaVuelo1 + duracionEscalaVuelo2 + duracionEscalaVuelo3;
+
+      alert(
+        `Su vuelo tiene escala en ${escalaVuelo1} con un tiempo de ${duracionEscalaVuelo1} minutos, en ${escalaVuelo2} con un tiempo de ${duracionEscalaVuelo2} y en ${escalaVuelo3} con un tiempo de ${duracionEscalaVuelo3}. El tiempo total de las escalas es de ${duracionTotalEscalas} minutos.`
+      );
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 17</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

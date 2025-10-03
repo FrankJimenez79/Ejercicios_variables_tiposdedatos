@@ -20,26 +20,27 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
-    /* Crear un programa que pida al usuario la distancia
-      de su recorrido y mostrar en un mensaje cuánto tiempo
-      tardaría en completar el recorrido en distintos medios 
-      de transporte, definiendo de antemano distintas velocidades
-      para distintos medios de transporte (p. ej.: a pie: 5 km/hora
-      , bici 10km/hora, etc.). */
+    /* Crear un programa que pida al usuario la distancia de su recorrido y
+    mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en
+    distintos medios de transporte, definiendo de antemano distintas velocidades
+    para distintos medios de transporte (p. ej.: a pie: 5 km/hora , bici
+    10km/hora, etc.). */
     <script>
-      let distancia = prompt("Introduce la cantidad recorrida en kilometros:")
+      let distancia = prompt("Introduce la cantidad recorrida en kilometros:");
 
-      let velocidadBiciporHora = 10
-      let velocidadCocheporHora = 50
-      let velocidadAPieporHora = 5
+      let velocidadBiciporHora = 10;
+      let velocidadCocheporHora = 50;
+      let velocidadAPieporHora = 5;
 
       let tiempoEnBiciEnHoras = distancia / velocidadBiciporHora;
       let tiempoEnCocheEnHoras = distancia / velocidadCocheporHora;
-      let tiempoAPieEnHoras = distancia / velocidadAPieporHora; 
+      let tiempoAPieEnHoras = distancia / velocidadAPieporHora;
 
-      alert(`La distancia de ${distancia} kilometros, tardarias ${tiempoEnBiciEnHoras} horas en Bici, tardarias ${tiempoEnCocheEnHoras} horas en coche y tardarias ${tiempoAPieEnHoras} horas a pie.`);
+      alert(
+        `La distancia de ${distancia} kilometros, tardarias ${tiempoEnBiciEnHoras} horas en Bici, tardarias ${tiempoEnCocheEnHoras} horas en coche y tardarias ${tiempoAPieEnHoras} horas a pie.`
+      );
     </script>
-
+  </head>
   <body>
     <header>
       <h1>Ejercicios de variables y tipos de Datos</h1>
