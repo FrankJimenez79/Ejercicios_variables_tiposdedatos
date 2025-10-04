@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script>
+      /* Crear un programa que pida al usuario ingresar cuántos años
+      lleva trabajando en una empresa, y le devuelva la cantidad de días
+      de vacaciones al año que le corresponden, siendo 15 días hasta 3 años
+      y 2 días más por cada año extra (p. ej.: a 6 años corresponden 21 días).*/
+
+      let añosEmpresa = Number(
+        prompt("Cuantos años llevas trabajando en la empresa:")
+      );
+
+      let vacaciones = (añosEmpresa - 3) * 2 + 15;
+
+      alert(`Te pertenecen ${vacaciones} dias de vacaciones.`);
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 23</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

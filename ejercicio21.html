@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script>
+      /* Crear un programa que pida ingresar una cantidad en segundos
+       y muestre un mensaje con el resultado de la conversión en horas, 
+       minutos y segundos que corresponde a esa cantidad (p.ej. 3602 segundos = 1 hora 2 segundos).
+        (Usar operador módulo) */
+
+      let segundosTotales = Number(
+        prompt("Ingresa la cantidad de segundos a convertir:")
+      );
+
+      let horas = Math.floor(segundosTotales / 3600);
+
+      let restoSegundos = segundosTotales % 3600;
+      let minutos = Math.floor(restoSegundos / 60);
+
+      let segundos = restoSegundos % 60;
+
+      alert(
+        `${segundosTotales} segundos son: ${horas} horas, ${minutos} minutos y ${segundos} segundos. `
+      );
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 21</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>
