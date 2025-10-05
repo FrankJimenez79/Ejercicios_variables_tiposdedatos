@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de variables y tipos de Datos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <script>
+      /* Crear un programa que tome la orden de compra de un local.
+      Pedir al usuario que ingrese la cantidad que desea comprar de tres
+      productos distintos, uno por uno, mostrar el valor total de la compra y
+      preguntar en cuántas cuotas desea realizar el pago. Mostrar un mensaje final
+      con el detalle y el valor total la compra, cantidad de cuotas y valor de cada 
+      una de las cuotas. Los precios de los productos deben estar definidos de antemano en variables.*/
+
+      let precioNaranja = 4;
+      let precioLimon = 5;
+      let precioManzana = 3;
+
+      let cantidadNaranjas = Number(prompt("Cuantas naranjas vas a comprar?"));
+      let cantidadLimones = Number(prompt("Cuantos limones vas a comprar?"));
+      let cantidadManzanas = Number(prompt("Cuantas manzanas vas a comprar?"));
+
+      let totalCompra =
+        cantidadNaranjas * precioNaranja +
+        cantidadLimones * precioLimon +
+        cantidadManzanas * precioManzana;
+      alert(`El precio total de la compra es de ${totalCompra} euros.`);
+
+      let numeroCuotas = Number(
+        prompt("En cuantas cuotas quiere hacer el pago?")
+      );
+      let totalCuota = totalCompra / numeroCuotas;
+
+      alert(
+        `Ha comprado ${cantidadNaranjas} naranjas, ${cantidadLimones} limones y ${cantidadManzanas} con un importe total de ${totalCompra} euros. Va a pagar en ${numeroCuotas} cuotas por un valor de ${totalCuota} cada cuota.`
+      );
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios de variables y tipos de Datos</h1>
+      <h2>Ejercicio 26</h2>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </header>
+  </body>
+</html>

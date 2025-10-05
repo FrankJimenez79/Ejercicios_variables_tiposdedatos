@@ -22,31 +22,51 @@
     <meta name="theme-color" content="#fafafa" />
 
     <script>
-      /* Crear un programa que pida al usuario ingresar,
-      de a uno por vez, cuántas habitaciones tiene un hotel
-      para 2, 3 y 4 personas, y muestre el máximo de huéspedes que puede albergar.*/
+      /* Crear un programa que pida al usuario cuanto dinero disponible tiene,
+      y vaya preguntando cuánto tiene que pagar por cada servicio, pidiendo el nombre
+      del servicio y el monto a pagar, uno a la vez. Cada vez que pide ingresar un nuevo 
+      servicio, el mensaje debe mostrar cuántos servicios quedan por ingresar, utilizando 
+      una variable, y mostrar cuánto dinero disponible queda. Al final debe mostrar una lista
+      con todos los servicios a pagar y el monto de cada uno, además del dinero disponible que le queda.
+      Hacerlo con 3 servicios.*/
 
-      let habitacionesPara2 = Number(
-        prompt("Cuantas habitaciones para 2 personas hay?")
-      );
-      let habitacionesPara3 = Number(
-        prompt("Cuantas habitaciones para 3 personas hay?")
-      );
-      let habitacionesPara4 = Number(
-        prompt("Cuantas habitaciones para 4 personas hay?")
-      );
+      let dineroDisponible = Number(prompt("Cuanto dinero disponible tienes?"));
+      let serviciosPorPagar = 3;
 
-      let huespedes =
-        habitacionesPara2 * 2 + habitacionesPara3 * 3 + habitacionesPara4 * 4;
+      alert(
+        `Falta por pagar ${serviciosPorPagar} servicios y tienes disponible ${dineroDisponible} euros.`
+      );
+      let primerServicio = prompt("Que servicio vas a pagar?");
+      let costePrimerServicio = Number(prompt("Cuanto vas a pagar?"));
+      serviciosPorPagar -= 1;
+      dineroDisponible -= costePrimerServicio;
 
-      alert(`El numero maximo de huespedes es de ${huespedes}.`);
+      alert(
+        `Falta por pagar ${serviciosPorPagar} servicios y tienes disponible ${dineroDisponible} euros.`
+      );
+      let segundoServicio = prompt("Que servicio vas a pagar?");
+      let costeSegundoServicio = Number(prompt("Cuanto vas a pagar?"));
+      serviciosPorPagar -= 1;
+      dineroDisponible -= costeSegundoServicio;
+
+      alert(
+        `Falta por pagar ${serviciosPorPagar} servicios y tienes disponible ${dineroDisponible} euros.`
+      );
+      let tercerServicio = prompt("Que servicio vas a pagar?");
+      let costeTercerServicio = Number(prompt("Cuanto vas a pagar?"));
+      serviciosPorPagar -= 1;
+      dineroDisponible -= costeTercerServicio;
+
+      alert(
+        `Has pagado ${primerServicio}: ${costePrimerServicio} euros. // ${segundoServicio}: ${costeSegundoServicio} euros. // ${tercerServicio}: ${costeTercerServicio} euros. Y tienes disponible ${dineroDisponible} euros.`
+      );
     </script>
   </head>
 
   <body>
     <header>
       <h1>Ejercicios de variables y tipos de Datos</h1>
-      <h2>Ejercicio 24</h2>
+      <h2>Ejercicio 25</h2>
       <ul>
         <li><a href="index.html">Volver atras</a></li>
       </ul>
